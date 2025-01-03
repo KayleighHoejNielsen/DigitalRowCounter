@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1024px;
+    font-size: 14px;
+    font-family: Helvetica, Georgia, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.banner h1 {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-size: 60px;
+    color: #5D3FD3;
+    font-family: Monotype Corsiva;
+}
+
+.counter {
+    border: solid;
+    border-color: #C8A2C8;
+    border-radius: 25px;
+    background-color: #C8A2C8;
+    margin: 70px;    
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}

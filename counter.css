@@ -25,17 +25,32 @@ body {
     border-radius: 25px;
     background-color: #C8A2C8;
     margin: 70px;    
+    width: 450px;
 }
 
 .button {
     background-color: #ddd;
     border: none;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
+    font-size: larger;
+}
+
+.extra {
+    font-size: 25px;
+}
+
+.display {
+    padding: 10px 20px;
+    text-align: center;
+    border: black;
+    border-radius: 16px;
+    font-size: 10pc;
+
 }

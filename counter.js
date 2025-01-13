@@ -1,6 +1,6 @@
 
 let counterValue = 0;
-let counterNumber = 0;
+let counterNumber = 1;
 
 const counterDisplay = document.getElementById("counter-display");
 const plusButton = document.getElementById("counter-plus");
@@ -38,11 +38,12 @@ deleteButton.addEventListener("click", () => {
   counter.remove();
 });
 
-newButton.addEventListener("click", createNewCounter);
-
-function createNewCounter() {
+newButton.addEventListener("click", () => {
+  let counterName = prompt("enter new counter name: ");
+  
   let newCounterValue = 0;
   let counterId = "counter" + counterNumber;
+  let nameId = "counter-name" + counterNumber;
   let diplayId = "display" + counterNumber;
   let plusId = "counter-plus" + counterNumber;
   let minusId = "counter-minus" + counterNumber;
@@ -56,6 +57,11 @@ function createNewCounter() {
   let newCounter = document.createElement("div");
   newCounter.className = "counter";
   newCounter.id = counterId;
+
+  let newCounterName = document.createElement("div");
+  newCounterName.className = "counter-name";
+  newCounterName.id = nameId;
+  newCounterName.textContent = counterName;
 
   let newCounterDisplay = document.createElement("div");
   newCounterDisplay.className = "counter-display";
@@ -106,13 +112,14 @@ function createNewCounter() {
     newCounter.remove();
   });
 
+  newCounter.appendChild(newCounterName);
   newCounter.appendChild(newCounterDisplay);
   newCounter.appendChild(newPlusButton);
   newCounter.appendChild(newMinusButton);
   newCounter.appendChild(newResetButton);
+  newCounter.appendChild(newDeleteButton);
 
   document.getElementById("new-counter").appendChild(newCounter);
 
   counterNumber++;
-
-};
+});

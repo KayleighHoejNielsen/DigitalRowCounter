@@ -6,17 +6,27 @@ body {
     font-family: Helvetica, Georgia, sans-serif;
 }
 
-.flex {
-    display: flex;
-}
-
 .banner h1 {
-    position: absolute;
     left: 200px;
     top: 10px;
-    font-size: 60px;
+    font-size: 70px;
     color: #5D3FD3;
     font-family: Monotype Corsiva;
+}
+
+.new {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    width: 120px;
+    height: 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 45px; 
 }
 
 .counter {
@@ -28,20 +38,10 @@ body {
     width: 450px;
 }
 
-.button {
-    background-color: #ddd;
-    border: none;
-    color: #333;
-    /*padding: 10px 60px;*/
-    width: 60px;
-    height: 60px;
+.counter-name {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-    font-size: larger;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .counter-display {
@@ -50,4 +50,20 @@ body {
     border-radius: 16px;
     font-size: 10pc;
 
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    width: 95px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    font-weight: bold;
 }

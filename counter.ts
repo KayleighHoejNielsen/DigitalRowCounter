@@ -4,9 +4,8 @@ let counterNumber: number = 1;
 
 const counterDisplay = document.getElementById("counter-display");
 function updateCounter() {
-  if(counterDisplay && counterDisplay.textContent) {
-    let counterDisplayValue = Number(counterDisplay.textContent.trim());
-    counterDisplayValue = counterValue;
+  if(counterDisplay) {
+    counterDisplay.innerHTML = counterValue.toString();
   }
 }
 
@@ -77,8 +76,7 @@ if(newButton) {
     let deleteId = "counter-delete" + counterNumber;
 
     function updateNewCounter() {
-      let newCounterDisplayValue = Number(newCounterDisplay);
-      newCounterDisplayValue = newCounterValue;
+      newCounterDisplay.innerHTML = newCounterValue.toString();
     }
 
     let newCounter = document.createElement("div");

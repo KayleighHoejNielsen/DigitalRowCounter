@@ -9,6 +9,7 @@ body {
 .banner h1 {
     left: 200px;
     top: 10px;
+    padding: 0 1,5em;
     font-size: 70px;
     color: #5D3FD3;
     font-family: Monotype Corsiva;
